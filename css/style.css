@@ -298,7 +298,7 @@ height: 100%;
 }
 
 .modal-input {
-  height: 44px;
+  height: 40px;
   width: 100%;
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -408,6 +408,12 @@ margin-top: 10px;
 margin-bottom: 30px;
 }
 
+.contract-blue {
+  color: #2196f3;
+  margin-left: 5px;
+  text-decoration-line: underline;
+}
+
 .modal-contract-checkbox::before {
   display: block;
   content: "";
@@ -450,11 +456,15 @@ border-radius: 100%;
 background-image: url(../images/hero/Vector.svg);
 background-repeat: no-repeat;
 background-position: center;
+transition-property: background-image;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover,
 .modal-close:focus {
-  color: #2196f3;
+  background-image: url(../images/modal/modal-close-blue.svg);
+  fill: #2196f3;
 }
 
 /* about us section */
@@ -828,7 +838,6 @@ fill: currentColor;
   display: flex;
   width: 570px;
   margin-top: 12px;
-  margin-bottom: 94px;
   margin-left: 93px;
 }
 
@@ -853,6 +862,7 @@ margin-bottom: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px;
+  color: orange;
 }
 
 .footer-email-input::placeholder {
