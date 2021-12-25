@@ -309,7 +309,7 @@ height: 100%;
 }
 
 .modal-input:focus {
-  border-color: #2196f3;
+  border: 1px solid #2196F3;
 }
 
 .modal-input:focus + .input-icon {
@@ -393,6 +393,27 @@ letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 }
 
+.signing-the-contract-checbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.signing-the-contract-checbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-color: orange;
+}
+
+.signing-the-contract-checbox:checked + .signing-the-contract-checbox-icon {
+  background-image: url(../images/modal/icon-check.svg);
+  width: 16px;
+  height: 15px;
+  background-repeat: no-repeat;
+}
+
 .modal-contract-checkbox {
 display: flex;
 justify-content: center;
@@ -414,7 +435,7 @@ margin-bottom: 30px;
   text-decoration-line: underline;
 }
 
-.modal-contract-checkbox::before {
+/* .modal-contract-checkbox::before {
   display: block;
   content: "";
   background-image: url(../images/modal/icon-check.svg);
@@ -422,8 +443,8 @@ margin-bottom: 30px;
   background-repeat: no-repeat;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
-}
+  margin-right: 7px; 
+} */
 
 .modal-submit-button {
 position: absolute;
