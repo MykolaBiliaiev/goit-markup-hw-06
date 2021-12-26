@@ -416,7 +416,7 @@ width: 16px;
 height: 15px;
 background-repeat: no-repeat;
 background-position: center;
-border: none;
+border: transparent;
 }
 
 .modal-contract-checkbox {
