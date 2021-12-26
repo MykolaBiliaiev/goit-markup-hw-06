@@ -402,17 +402,21 @@ color: rgba(117, 117, 117, 0.5);
 }
 
 .signing-the-contract-checbox-icon {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  /* border: 1px solid #212121; */
+display: inline-block;
+width: 16px;
+height: 15px;
+    border: 1px solid #212121;
+    border-radius: 2px;
+    vertical-align: middle;
 }
 
 .signing-the-contract-checbox:checked + .signing-the-contract-checbox-icon {
-  background-image: url(../images/modal/icon-check.svg);
-  width: 16px;
-  height: 15px;
-  background-repeat: no-repeat;
+background-image: url(../images/modal/icon-check.svg);
+width: 16px;
+height: 15px;
+background-repeat: no-repeat;
+background-position: center;
+border: none;
 }
 
 .modal-contract-checkbox {
